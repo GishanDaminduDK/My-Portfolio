@@ -127,6 +127,17 @@ export const infoList = [
     • Deep Learning Specialization (DeepLearning.AI)
     • Machine Learning Specialization (Stanford University)
     `
+  },
+  {
+    icon: assets.achievement_icon,
+    iconDark: assets.achievement_icon_dark,
+    title: 'Achievements',
+    description: `• Object-Oriented Programming Specialization (University of London)
+    • Databases and SQL for Data Science with Python (IBM)
+    • Foundations of Data Structures and Algorithms Specialization (University of Colorado Boulder)
+    • Deep Learning Specialization (DeepLearning.AI)
+    • Machine Learning Specialization (Stanford University)
+    `
   }
   
 ];
