@@ -35,8 +35,13 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import achievement_icon from './work-1.png';
+import achievement_icon_dark from './public/work-1.png';
+import abc_image from './abc.png';
+import java from './java-icon.png';
 
 export const assets = {
+   
     user_image,
     code_icon,
     code_icon_dark,
@@ -73,7 +78,11 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    abc_image,
+    java,
+    
+  
 };
 
 export const workData = [
@@ -129,19 +138,18 @@ export const infoList = [
     `
   },
   {
-    icon: assets.achievement_icon,
-    iconDark: assets.achievement_icon_dark,
+    icon: assets.ui_icon,
+    iconDark: assets.ui_icon,
     title: 'Achievements',
-    description: `• Object-Oriented Programming Specialization (University of London)
-    • Databases and SQL for Data Science with Python (IBM)
-    • Foundations of Data Structures and Algorithms Specialization (University of Colorado Boulder)
-    • Deep Learning Specialization (DeepLearning.AI)
-    • Machine Learning Specialization (Stanford University)
-    `
+    description: `• Champions | SPARK Challenge 22/23 - Electronic Engineering Undergraduate Competition
+  • 5th Place | Technobots 2023 - Robotics Competition hosted By SLTC University
+  • 4th Place | Sparklink1.0 2023 - Digital Design Competition hosted by University of Ruhuna
+  • Mahapola Higher Education (Merit) Scholarship`
   }
+  
   
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.firebase, assets.vscode, assets.java, assets.mongodb, assets.git, assets.figma
 ];
