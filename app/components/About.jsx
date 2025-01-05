@@ -31,7 +31,8 @@ const About = () => {
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <div
                 key={index}
-                className={`border rounded-lg p-6 cursor-pointer hover:shadow-lg transition-all duration-300 ${
+                className={`border rounded-lg p-6 cursor-pointer hover:shadow-lg transition-all duration-300 cursor-pointer hover:bg-lightHover hover:-translate-y-1 hover:shadow-black
+                duration-500'${
                   activeIndex === index ? 'max-h-[350px]' : 'max-h-[120px]'
                 }`}
                 onClick={() => toggleCard(index)}
@@ -59,7 +60,10 @@ const About = () => {
             <h4 className='my-6 text-gray-700 font-Ovo text-2xl'> Tech stacks I use</h4>
             <ul className='flex items-center gap-3 sm:gap-5'>
               {toolsData.map((tool, index) => (
-                <li key={index}>
+                <li className='flex items-ceneter justify-center
+                w-12 sm:w-14 aspect-square border border-gray-400
+                rounded-lg cursor-pointer hover:-translate-y-1
+                duration-500' key={index}>
                   <Image src={tool} alt={`Tool ${index + 1}`} className='w-8 h-8 sm:w-10 sm:h-10' />
                 </li>
 
@@ -68,7 +72,7 @@ const About = () => {
 
           </div>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };
