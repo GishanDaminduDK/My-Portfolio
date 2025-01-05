@@ -107,9 +107,28 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    {
+        icon: assets.edu_icon,
+        iconDark: assets.edu_icon_dark,
+        title: 'Education',
+        description: `•BSc in Electronic and Telecommunication Engineering, University of Moratuwa,
+        •Rahula College, Matara
+        `
+      }
+      
+   ,{ icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Tech Stack', description: 'Python, Java, JavaScript React Js, Go' },
+   {
+    icon: assets.project_icon,
+    iconDark: assets.project_icon_dark,
+    title: 'Certifications',
+    description: `• Object-Oriented Programming Specialization (University of London)
+    • Databases and SQL for Data Science with Python (IBM)
+    • Foundations of Data Structures and Algorithms Specialization (University of Colorado Boulder)
+    • Deep Learning Specialization (DeepLearning.AI)
+    • Machine Learning Specialization (Stanford University)
+    `
+  }
+  
 ];
 
 export const toolsData = [
