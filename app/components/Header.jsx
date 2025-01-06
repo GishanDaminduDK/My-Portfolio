@@ -10,7 +10,7 @@ const Header = () => {
       items-center justify-center gap-4 relative' 
     style={{ paddingTop: '2cm' }}>
       <div>
-        <Image src={assets.profile_img} alt="Background header color" className="rounded-full w-32" />
+        <Image src={assets.profile_img} alt="Background header color" className="rounded-full w-50" />
       </div>
       <h3 className = 'flex items-end gap-2 text-xl md:text-2xl mb-3 front-Ovo'>
         Hi! I'm Gishan Damindu <Image src={assets.hand_icon} alt='profile_icon' className='w-6'/>

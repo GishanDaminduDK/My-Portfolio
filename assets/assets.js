@@ -1,4 +1,4 @@
-import user_image from './user-image.png';
+import user_image from './user-image.jpg';
 import code_icon from './code-icon.png';
 import code_icon_dark from './code-icon-dark.png';
 import edu_icon from './edu-icon.png';
@@ -15,7 +15,7 @@ import logo from './logo.png';
 import logo_dark from './logo_dark.png';
 import mail_icon from './mail_icon.png';
 import mail_icon_dark from './mail_icon_dark.png';
-import profile_img from './profile-img.png';
+import profile_img from './profile-image.png';
 import download_icon from './download-icon.png';
 import hand_icon from './hand-icon.png';
 import header_bg_color from './header-bg-color.png';
@@ -87,28 +87,82 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Frontend project',
+        title: 'Unity WebGL Game',
+        description: `
+
+Developed a gamified energy conservation web platform using ReactJS, Spring Boot, and Unity, featuring interactive mechanics, leaderboards, and educational tools to promote energy-saving behaviors.`,
+        bgImage: '/work-1.png',
+        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
+        techStacks:'ReactJs,MySQL,Spring Boot,Unity',
+    },
+    {
+        title: 'LLM RAG Chatbot',
+        description: 'Web Design',
+        bgImage: '/work-2.png',
+        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
+        techStacks:'ReactJs,MySQL',
+    },
+    {
+        title: 'Video Chat Application',
         description: 'Web Design',
         bgImage: '/work-1.png',
         githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
+        techStacks:'ReactJs,MySQL',
     },
     {
-        title: 'Geo based app',
-        description: 'Mobile App',
+        title: 'LLM RAG Chatbot',
+        description: 'Web Design',
         bgImage: '/work-2.png',
         githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
+        techStacks:'ReactJs,MySQL',
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'UAV Swarm Identification',
+        description: 'Final Year Project',
         bgImage: '/work-3.png',
         githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
+        techStacks:'ReactJs,MySQL',
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'Smart Bicycle Speedo Meter',
+        description: 'Electronic Project',
         bgImage: '/work-4.png',
         githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
+        techStacks:'ReactJs,MySQL',
+    },
+    {
+        title: ' Smart Bicycle Speedo Meter',
+        description: 'Electronic Project',
+        bgImage: '/work-4.png',
+        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
+        techStacks:'ReactJs,MySQL',
+    },
+   
+ 
+    {
+        title: 'Photography site',
+        description: `• Developed a gamified platform using ReactJS, Spring Boot, and Unity to promote energy conservation
+ through interactive features.
+ • Designed real-time game mechanics and a leaderboard to reflect and reward energy-saving actions, enhancing
+ user engagement.
+ • e.`,
+        bgImage: '/work-3.png',
+        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
+        techStacks:'ReactJs,MySQL',
+    },
+    {
+        title: ' Smart Bicycle Speedo Meter',
+        description: 'Electronic Project',
+        bgImage: '/work-4.png',
+        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
+        techStacks:'ReactJs,MySQL',
+    },
+    {
+        title: ' Smart Bicycle Speedo Meter',
+        description: 'Electronic Project',
+        bgImage: '/work-4.png',
+        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
+        techStacks:'ReactJs,MySQL',
     },
    
     
