@@ -90,22 +90,28 @@ export const workData = [
         title: 'Frontend project',
         description: 'Web Design',
         bgImage: '/work-1.png',
+        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
     },
     {
         title: 'Geo based app',
         description: 'Mobile App',
         bgImage: '/work-2.png',
+        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
     },
     {
         title: 'Photography site',
         description: 'Web Design',
         bgImage: '/work-3.png',
+        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
+        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
     },
+   
+    
 ]
 
 export const serviceData = [
