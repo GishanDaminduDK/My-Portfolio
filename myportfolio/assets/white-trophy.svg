@@ -1,0 +1,28 @@
+<svg viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Trophy Cup -->
+  <path fill="white" d="
+    M 30 20 
+    L 70 20 
+    L 70 60
+    C 70 70 60 80 50 80
+    C 40 80 30 70 30 60
+    Z" />
+  
+  <!-- Left Handle -->
+  <path fill="white" d="
+    M 30 30
+    C 20 30 15 35 15 45
+    C 15 55 20 60 25 60
+    L 30 60" />
+    
+  <!-- Right Handle -->
+  <path fill="white" d="
+    M 70 30
+    C 80 30 85 35 85 45
+    C 85 55 80 60 75 60
+    L 70 60" />
+    
+  <!-- Base -->
+  <rect x="45" y="80" width="10" height="20" fill="white"/>
+  <rect x="30" y="100" width="40" height="10" fill="white"/>
+</svg>

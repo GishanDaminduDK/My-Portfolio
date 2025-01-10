@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Image from 'next/image'
 import { assets, infoList, toolsData } from '@/assets/assets'
 
-const About = () => {
+const About = (isDarkMode) => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleCard = (index) => {
@@ -31,15 +31,16 @@ const About = () => {
             {infoList.map(({ icon, iconDark, title, description }, index) => (
               <div
                 key={index}
-                className={`border rounded-lg p-6 cursor-pointer hover:shadow-lg transition-all duration-300 cursor-pointer hover:bg-lightHover hover:-translate-y-1 hover:shadow-black
-                duration-500'${
+                className={`border rounded-lg p-6 cursor-pointer hover:shadow-lg transition-all duration-300 cursor-pointer hover:bg-none hover:-translate-y-1 hover:shadow-black
+                duration-500 hover:shadow-black dark:border-white
+                dark:hover:shadow-white dark:hover:bg-darkHover/50'${
                   activeIndex === index ? 'max-h-[350px]' : 'max-h-[120px]'
                 }`}
                 onClick={() => toggleCard(index)}
               >
                 <div className='flex items-center'>
-                  <Image src={icon} alt={title} className='mr-4 w-10 h-10' />
-                  <h3 className='text-xl font-semibold'>{title}</h3>
+                  <Image src={isDarkMode? iconDark:icon} alt={title} className='mr-4 w-10 h-10' />
+                  <h3 className='text-xl font-semibold text-gray-700 dark:text-white' >{title}</h3>
                 </div>
                 <div
                   className={`overflow-hidden transition-all duration-300 ${

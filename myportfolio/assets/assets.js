@@ -38,7 +38,11 @@ import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 import achievement_icon from './work-1.png';
 import achievement_icon_dark from './public/work-1.png';
 import abc_image from './abc.png';
+import abc_image_dark from './abc-dark.png';
 import java from './java-icon.png';
+import linkedin_icon from './linkedin.png';
+import github_icon from './github.png';
+import twitter_icon from './twitter.png';
 
 export const assets = {
    
@@ -80,7 +84,11 @@ export const assets = {
     right_arrow_bold,
     right_arrow_bold_dark,
     abc_image,
+    abc_image_dark,
     java,
+    linkedin_icon,
+    github_icon,
+    twitter_icon,
     
   
 };
@@ -199,7 +207,7 @@ export const infoList = [
   },
   {
     icon: assets.ui_icon,
-    iconDark: assets.ui_icon,
+    iconDark: assets.abc_image_dark,
     title: 'Achievements',
     description: `• Champions | SPARK Challenge 22/23 - Electronic Engineering Undergraduate Competition
   • 5th Place | Technobots 2023 - Robotics Competition hosted By SLTC University
