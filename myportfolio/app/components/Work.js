@@ -7,8 +7,8 @@ const Work = () => {
 
   return (
     <div id="work" className="w-full px-[12%] py-10 scroll-mt-20 bg-gray-50">
-      <h4 className="text-gray-600 uppercase tracking-wider text-sm mb-2">My Projects</h4>
-      <h2 className="text-4xl font-semibold mb-8">Featured Work</h2>
+      <h4 className='text-center mb-2 text-lg font-Ovo'>My Projects</h4>
+      <h2 className='text-center text-5xl font-Ovo'>Featured Work</h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
         {workData.map((project, index) => (
