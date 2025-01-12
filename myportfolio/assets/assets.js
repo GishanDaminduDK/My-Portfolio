@@ -43,6 +43,7 @@ import java from './java-icon.png';
 import linkedin_icon from './linkedin.png';
 import github_icon from './github.png';
 import twitter_icon from './twitter.png';
+import gishan_icon from './gishan.png';
 
 export const assets = {
    
@@ -89,6 +90,7 @@ export const assets = {
     linkedin_icon,
     github_icon,
     twitter_icon,
+    gishan_icon,
     
   
 };
