@@ -46,6 +46,7 @@ import twitter_icon from './twitter.png';
 import gishan_icon from './gishan.png';
 import work_1 from './work-1.png';
 import work_2 from './work-2.png';
+import drone_swarm from './drone-swarm.jpeg';
 
 export const assets = {
    
@@ -95,6 +96,7 @@ export const assets = {
     gishan_icon,
     work_1,
     work_2,
+    drone_swarm,
     
   
 };
@@ -105,7 +107,7 @@ export const workData = [
         title: 'Detection and Identification of UAV Swarms',
         description: `Developing a robust system for the detection, identification,
         and ranging of UAV swarms by leveraging advanced signal processing algorithms and self-supervised learning techniques.`,
-        bgImage: assets.work_1,
+        bgImage: assets.drone_swarm,
         githublink:'https://github.com/GishanDaminduDK/FYP-SignalProcessing',
         techStacks:'Python, Pytorch,Matlab, Radar'
     },
