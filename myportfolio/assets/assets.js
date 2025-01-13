@@ -44,6 +44,8 @@ import linkedin_icon from './linkedin.png';
 import github_icon from './github.png';
 import twitter_icon from './twitter.png';
 import gishan_icon from './gishan.png';
+import work_1 from './work-1.png';
+import work_2 from './work-2.png';
 
 export const assets = {
    
@@ -91,6 +93,8 @@ export const assets = {
     github_icon,
     twitter_icon,
     gishan_icon,
+    work_1,
+    work_2,
     
   
 };
@@ -100,7 +104,7 @@ export const workData = [
         title: 'Unity WebGL Game',
         description: `Developed a gamified energy conservation web platform using ReactJS, Spring Boot, and Unity, 
         featuring interactive mechanics, leaderboards, and educational tools to promote energy-saving behaviors.`,
-        bgImage: '/work-1.png',
+        bgImage: assets.work_1,
         githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
         techStacks:'ReactJs,MySQL,Spring Boot,Unity',
     },
@@ -108,7 +112,7 @@ export const workData = [
         title: 'LLM RAG Chatbot',
         description:` An NLP project aimed at crafting a chatbot capable of answering questions sourced from provided documents. 
         It leverages open-source large language models (LLM) and retrieval augmented generation (RAG) techniques for this purpose.`,
-        bgImage: '/work-2.png',
+        bgImage: assets.work_2,
         githublink:'https://github.com/GishanDaminduDK/LLM_Projects',
         techStacks:'NLP,Ollama,Langchain',
     },

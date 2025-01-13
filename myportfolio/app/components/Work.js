@@ -19,12 +19,10 @@ const Work = ({ isDarkMode }) => {
           >
             {/* Project Image */}
             <div className="relative h-48 overflow-hidden">
-              <div 
-                className="absolute inset-0 bg-center bg-cover transform hover:scale-105 transition-transform duration-500"
-                style={{ backgroundImage: `url(${project.bgImage})` }}
-              />
-            </div>
 
+              <Image src={project.bgImage} alt={project.title} layout="fill" objectFit="cover" className="transform hover:scale-105 transition-transform duration-500" />
+              
+            </div>
             {/* Content Container */}
             <div className="p-6">
               {/* Category */}
