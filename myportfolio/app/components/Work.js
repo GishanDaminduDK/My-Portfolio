@@ -21,7 +21,7 @@ const Work = ({ isDarkMode }) => {
             <div className="relative h-48 overflow-hidden">
 
               <Image src={project.bgImage} alt={project.title} layout="fill" objectFit="cover" className="transform hover:scale-105 transition-transform duration-500" />
-              
+
             </div>
             {/* Content Container */}
             <div className="p-6">
@@ -40,7 +40,7 @@ const Work = ({ isDarkMode }) => {
 
               {/* Tech Stack Tags */}
               <div className="flex flex-wrap gap-2 mb-4">
-                {project.techStacks.split(",").slice(0, 3).map((tech, techIndex) => (
+                {project.techStacks.split(",").slice(0, 4).map((tech, techIndex) => (
                   <span
                     key={techIndex}
                     className="px-3 py-1 bg-gray-100 dark:bg-darkTheme text-gray-600 dark:text-gray-300 rounded-full text-xs"
@@ -54,9 +54,9 @@ const Work = ({ isDarkMode }) => {
               <div className="flex justify-between items-center">
                 <button 
                   onClick={() => setSelectedProject(project)}
-                  className="text-sm font-medium text-indigo-600 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300"
+                  className="text-sm font-medium text-indigo-900 dark:text-indigo-400 hover:text-indigo-700 dark:hover:text-indigo-300"
                 >
-                  Learn More
+                  Read More
                 </button>
                 <button
                   onClick={(e) => {

@@ -101,14 +101,35 @@ export const assets = {
 
 export const workData = [
     {
-        title: 'Unity WebGL Game',
+        category: 'Research Project',
+        title: 'Detection and Identification of UAV Swarms',
+        description: `Developing a robust system for the detection, identification,
+        and ranging of UAV swarms by leveraging advanced signal processing algorithms and self-supervised learning techniques.`,
+        bgImage: assets.work_1,
+        githublink:'https://github.com/GishanDaminduDK/FYP-SignalProcessing',
+        techStacks:'Python, Pytorch,Matlab, Radar'
+    },
+    ,
+    {
+        category: 'WebGL Game Development',
+        title: 'Skyline Unity WebGL Game',
         description: `Developed a gamified energy conservation web platform using ReactJS, Spring Boot, and Unity, 
         featuring interactive mechanics, leaderboards, and educational tools to promote energy-saving behaviors.`,
         bgImage: assets.work_1,
-        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
-        techStacks:'ReactJs,MySQL,Spring Boot,Unity',
+        githublink:'https://github.com/GishanDaminduDK/Unity-Game-Development',
+        techStacks:'React.js,Spring Boot,Unity,MySQL',
     },
     {
+        category: 'Web Development',
+        title: 'Video Chat Application',
+        description: `A secure, bidirectional video chat application built with WebRTC, React, and Go.
+        This application is designed for real-world insurance use cases with a focus on secure client communications.`,
+        bgImage: '/work-1.png',
+        githublink:'https://github.com/GishanDaminduDK/VideoChatApp',
+        techStacks:'WebRTC, React.js, Go, MySQL',
+    },
+    {
+        category: 'Software Development',
         title: 'LLM RAG Chatbot',
         description:` An NLP project aimed at crafting a chatbot capable of answering questions sourced from provided documents. 
         It leverages open-source large language models (LLM) and retrieval augmented generation (RAG) techniques for this purpose.`,
@@ -116,19 +137,15 @@ export const workData = [
         githublink:'https://github.com/GishanDaminduDK/LLM_Projects',
         techStacks:'NLP,Ollama,Langchain',
     },
+
     {
-        title: 'Video Chat Application',
-        description: 'Web Design',
-        bgImage: '/work-1.png',
-        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
-        techStacks:'ReactJs,MySQL',
-    },
-    {
-        title: 'LLM RAG Chatbot',
-        description: 'Web Design',
+        category: 'Software Development',
+        title: 'Flower Exchange Platform',
+        description: `The trading application was implemented using C++ programming language.
+        Employed Object-Oriented Programming (OOP) principles to design and implement the application.`,
         bgImage: '/work-2.png',
-        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
-        techStacks:'ReactJs,MySQL',
+        githublink:'https://github.com/KavinduKariyawasam/Flower_Exchange',
+        techStacks:'C++, OOP',
     },
     {
         title: 'UAV Swarm Identification',
@@ -151,8 +168,6 @@ export const workData = [
         githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
         techStacks:'ReactJs,MySQL',
     },
-   
- 
     {
         title: 'Photography site',
         description: `• Developed a gamified platform using ReactJS, Spring Boot, and Unity to promote energy conservation
