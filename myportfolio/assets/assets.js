@@ -47,7 +47,12 @@ import gishan_icon from './gishan.png';
 import work_1 from './work-1.png';
 import work_2 from './work-2.png';
 import drone_swarm from './drone-swarm.jpeg';
-
+import unity_game from './unity-game.png';
+import rag_image from './rag-chatbot.png';
+import video from './video-chat.jpg';
+import flower_exchange from './flower-exchange.jpeg';
+import microservices_image from './microservices.png';
+import denslypacked_image from './densly_image.png';
 export const assets = {
    
     user_image,
@@ -97,6 +102,13 @@ export const assets = {
     work_1,
     work_2,
     drone_swarm,
+    unity_game,
+    rag_image,
+    video,
+    flower_exchange,
+    microservices_image,
+    denslypacked_image,
+
     
   
 };
@@ -117,7 +129,7 @@ export const workData = [
         title: 'Skyline Unity WebGL Game',
         description: `Developed a gamified energy conservation web platform using ReactJS, Spring Boot, and Unity, 
         featuring interactive mechanics, leaderboards, and educational tools to promote energy-saving behaviors.`,
-        bgImage: assets.work_1,
+        bgImage: assets.unity_game,
         githublink:'https://github.com/GishanDaminduDK/Unity-Game-Development',
         techStacks:'React.js,Spring Boot,Unity,MySQL',
     },
@@ -126,7 +138,7 @@ export const workData = [
         title: 'Video Chat Application',
         description: `A secure, bidirectional video chat application built with WebRTC, React, and Go.
         This application is designed for real-world insurance use cases with a focus on secure client communications.`,
-        bgImage: '/work-1.png',
+        bgImage: assets.video,
         githublink:'https://github.com/GishanDaminduDK/VideoChatApp',
         techStacks:'WebRTC, React.js, Go, MySQL',
     },
@@ -135,7 +147,7 @@ export const workData = [
         title: 'LLM RAG Chatbot',
         description:` An NLP project aimed at crafting a chatbot capable of answering questions sourced from provided documents. 
         It leverages open-source large language models (LLM) and retrieval augmented generation (RAG) techniques for this purpose.`,
-        bgImage: assets.work_2,
+        bgImage: assets.rag_image,
         githublink:'https://github.com/GishanDaminduDK/LLM_Projects',
         techStacks:'NLP,Ollama,Langchain',
     },
@@ -145,24 +157,28 @@ export const workData = [
         title: 'Flower Exchange Platform',
         description: `The trading application was implemented using C++ programming language.
         Employed Object-Oriented Programming (OOP) principles to design and implement the application.`,
-        bgImage: '/work-2.png',
+        bgImage: assets.flower_exchange,
         githublink:'https://github.com/KavinduKariyawasam/Flower_Exchange',
         techStacks:'C++, OOP',
     },
     {
-        title: 'UAV Swarm Identification',
-        description: 'Final Year Project',
-        bgImage: '/work-3.png',
-        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
-        techStacks:'ReactJs,MySQL',
+        category: 'Web Development',
+        title:'Product Management System',
+        description:'Developed a CRUD application for managing product lifecycles using a microservices architecture.',
+        bgImage: assets.microservices_image,
+        githublink:'https://github.com/GishanDaminduDK/Java-Projects',
+        techStacks:'Spring Boot,MySQL',
     },
     {
-        title: 'Smart Bicycle Speedo Meter',
-        description: 'Electronic Project',
-        bgImage: '/work-4.png',
-        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
-        techStacks:'ReactJs,MySQL',
+        category: 'Software Development',
+        title:'Densely Packed Product Detection',
+        description:`Applied computer vision models to detect retail items in densely packed scenes.
+        Improved detection accuracy through model fine-tuning and post-processing techniques.`,
+        bgImage: assets.denslypacked_image,
+        githublink:'https://github.com/GishanDaminduDK/Product-Detection-in-Densely-Packed-Scenes--Computer-vision--Machine-learning--',
+        techStacks:'Python, OpenCV, Deep Learning',
     },
+    
     {
         title: ' Smart Bicycle Speedo Meter',
         description: 'Electronic Project',
@@ -173,10 +189,10 @@ export const workData = [
     {
         title: 'Photography site',
         description: `• Developed a gamified platform using ReactJS, Spring Boot, and Unity to promote energy conservation
- through interactive features.
- • Designed real-time game mechanics and a leaderboard to reflect and reward energy-saving actions, enhancing
- user engagement.
- • e.`,
+        through interactive features.
+        • Designed real-time game mechanics and a leaderboard to reflect and reward energy-saving actions, enhancing
+        user engagement.
+        • e.`,
         bgImage: '/work-3.png',
         githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
         techStacks:'ReactJs,MySQL',
