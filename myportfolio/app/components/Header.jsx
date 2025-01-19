@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { assets } from '@/assets/assets';
 import { Linkedin, Github, Facebook, Instagram, MessagesSquare } from 'lucide-react';
+import {motion} from "motion/react"
 
 const SocialMediaBar = () => {
   const socialLinks = [
@@ -61,47 +62,69 @@ const Header = () => {
           items-center justify-center gap-6 relative" 
         style={{ paddingTop: '2cm' }}
       >
-        <div>
+        <motion.div 
+        initial={{scale:0}}
+        whileInView={{scale:1}}
+        transition={{duration:0.8, type:'spring',stiffness:100}}
+        >
           <Image 
             src={assets.gishan_icon} 
             alt="Background header color" 
             className="rounded-full w-48 h-48 object-cover object-[90%_10%]" 
           />
-        </div>
+        </motion.div>
         
-        <h3 className="flex items-end gap-2 text-2xl md:text-3xl mb-3 font-Ovo">
+        <motion.h3 
+        initial={{y:-20, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{duration: 0.6, delay:0.3}}
+        className="flex items-end gap-2 text-2xl md:text-3xl mb-3 font-Ovo">
           Hi! I'm Gishan Damindu <Image src={assets.hand_icon} alt="profile_icon" className="w-8"/>
-        </h3>
+        </motion.h3>
         
-        <h1 className="text-4xl sm:text-6xl lg:text-7xl font-Ovo leading-tight">
+        <motion.h1
+        initial={{y:-30, opacity:0}}
+        whileInView={{y:0, opacity:1}}
+        transition={{duration: 0.8, delay:0.5}}
+         className="text-4xl sm:text-6xl lg:text-7xl font-Ovo leading-tight">
           I am a technology enthusiast.
-        </h1>
+        </motion.h1>
         
-        <p className="max-w-3xl mx-auto text-lg font-Ovo">
+        <motion.p 
+        initial={{opacity:0}}
+        whileInView={{opacity:1}}
+        transition={{duration: 0.6, delay:0.7}}
+        className="max-w-3xl mx-auto text-lg font-Ovo">
           As a self-motivated final-year undergraduate with a solid foundation of knowledge, I am passionate
           about tackling real-world problems and enthusiastic about making contributions to the fields of 
           <strong> Software Engineering</strong>, <strong>Computer Vision</strong>, and <strong>Machine Learning</strong>.
-        </p>
+        </motion.p>
         
         <div className="flex flex-col sm:flex-row items-center gap-6 mt-8">
-          <a 
+          <motion.a 
+          initial={{y:30, opacity:0}}
+          whileInView={{y:0, opacity:1}}
+          transition={{duration: 0.6, delay:1}}
             href="#contact"
             className="px-12 py-4 border border-white rounded-full bg-black
               text-white flex items-center gap-3 dark:bg-transparent hover:bg-gray-900 
               transition-colors duration-300 text-lg"
           >
             Contact me<Image src={assets.right_arrow_white} alt="Arrow" className="w-5"/>
-          </a>
+          </motion.a>
           
-          <a 
-            href="/sample-resume.pdf" 
-            download
-            className="px-12 py-4 border rounded-full border-gray-500 flex items-center 
-              gap-3 bg-white dark:text-black hover:bg-gray-100 transition-colors 
-              duration-300 text-lg"
+          <motion.a 
+          initial={{y:30, opacity:0}}
+          whileInView={{y:0, opacity:1}}
+          transition={{duration: 0.6, delay:1.2}}
+          href="/sample-resume.pdf" 
+          download
+          className="px-12 py-4 border rounded-full border-gray-500 flex items-center 
+            gap-3 bg-white dark:text-black hover:bg-gray-100 transition-colors 
+            duration-300 text-lg"
           >
             My resume<Image src={assets.download_icon} alt="download" className="w-5"/>
-          </a>
+          </motion.a>
         </div>
       </div>
     </>
