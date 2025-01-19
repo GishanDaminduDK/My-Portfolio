@@ -53,6 +53,11 @@ import video from './video-chat.jpg';
 import flower_exchange from './flower-exchange.jpeg';
 import microservices_image from './microservices.png';
 import denslypacked_image from './densly_image.png';
+import pcb_image from './PCB.jpg';
+import deforestation from './deforestation.png';
+import micro_mouse from './micro-mouse.png';
+import webot_image from './webots.png';
+import dual_robot from './dualrobot.jpg';
 export const assets = {
    
     user_image,
@@ -108,6 +113,12 @@ export const assets = {
     flower_exchange,
     microservices_image,
     denslypacked_image,
+    pcb_image,
+    deforestation,
+    micro_mouse,
+    webot_image,
+    dual_robot,
+
 
     
   
@@ -180,36 +191,53 @@ export const workData = [
     },
     
     {
+        category: 'Electronic Project',
         title: ' Smart Bicycle Speedo Meter',
-        description: 'Electronic Project',
-        bgImage: '/work-4.png',
-        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
-        techStacks:'ReactJs,MySQL',
+        description: `A versatile bicycle speedometer that displays speed, time, temperature, 
+        and humidity in real-time, enhancing the cycling experience and supporting eco-friendly transportation.`,
+        bgImage: assets.pcb_image,
+        githublink:'https://github.com/GishanDaminduDK/BicycleSpeedoMeter-Electronic_Project/tree/main',
+        techStacks:'C++, Altium, SolidWorks',
     },
     {
-        title: 'Photography site',
-        description: `• Developed a gamified platform using ReactJS, Spring Boot, and Unity to promote energy conservation
-        through interactive features.
-        • Designed real-time game mechanics and a leaderboard to reflect and reward energy-saving actions, enhancing
-        user engagement.
-        • e.`,
-        bgImage: '/work-3.png',
-        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
-        techStacks:'ReactJs,MySQL',
+        category: 'Robotics Project',
+        description: `This robot, developed using C++ and Object-Oriented Programming (OOP), is designed for tasks like line following (dotted, segmented, and colored), 
+        wall following, lifting objects, and ramp climbing. Simulated in Webots, it excels in autonomous navigation through line mazes, curved wall paths, and blind box navigation.`,
+        title: 'Simulation and Physical Robots',
+        bgImage:assets.webot_image,
+        githublink:'https://github.com/GishanDaminduDK/EN2533-Robot--Design-and-Competition',
+        techStacks:'C++, OOP, Webots',
     },
     {
-        title: ' Smart Bicycle Speedo Meter',
-        description: 'Electronic Project',
-        bgImage: '/work-4.png',
-        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
-        techStacks:'ReactJs,MySQL',
+        category: 'Software Development',
+        title: 'Identifying Deforestation Drivers',
+        description: `This ongoing project focuses on identifying and segmenting deforestation drivers using satellite imagery. 
+        By leveraging remote sensing data from Sentinel-2 and advanced machine learning techniques,
+        it aims to analyze land-use changes caused by factors like agricultural expansion,
+        mining, and urbanization. The insights gained will contribute to creating targeted conservation strategies to mitigate deforestation impacts.`,
+        bgImage: assets.deforestation,
+        githublink:'',
+        techStacks:'Pytorch, Deep Learning',
     },
     {
-        title: ' Smart Bicycle Speedo Meter',
-        description: 'Electronic Project',
-        bgImage: '/work-4.png',
-        githublink:'https://github.com/GishanDaminduDK/FlowerExchange_Project',
-        techStacks:'ReactJs,MySQL',
+        category: 'Robotics Project',
+        title: 'Micro Mouse Robot Design',
+        description: `We developed a Micro-Mouse robot designed to navigate and solve a maze in the shortest possible time.
+        The robot employs the efficient "flood-fill" algorithm to map and find the optimal path to the maze's center. 
+        Custom-designed PCBs were used to ensure precise control and seamless integration of hardware components, enabling fast and accurate maze-solving performance.`, 
+        bgImage:assets.micro_mouse,
+        githublink:'https://github.com/GishanDaminduDK/Micro-Mouse-Robot-Design',
+        techStacks:'Arduino, PCB Design, OOP',
+    },
+    {
+        category: 'Robotics Project',
+        title: 'Dual Robot System',
+        description: `This project, presented at the Exmo exhibition, features two robots working together through radio frequency communication. 
+        The primary robot hosts the secondary robot,  enabling seamless collaboration and task diversification in tasks like line and dotted line 
+        following, maze solving, color detection, and box grabbing.`,
+        bgImage:assets.dual_robot,
+        githublink:'https://github.com/GishanDaminduDK/Dual-Robot-System-for-Exmo-23-Exhibition',
+        techStacks:'Arduino, OOP',
     },
    
     
