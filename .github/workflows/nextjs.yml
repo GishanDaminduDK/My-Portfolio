@@ -46,8 +46,10 @@ jobs:
           npm run build
           # Ensure the public folder from assets is included in the build output
           mkdir -p out/assets/public
+          mkdir -p out/public
           cp -r assets/public/* out/assets/public
           cp -r assets/* out/assets
+          cp -r public/* out/public 
 
       # Step 5: Upload the built artifact for deployment
       - name: Upload artifact
