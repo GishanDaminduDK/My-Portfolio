@@ -66,39 +66,7 @@ const About = ({ isDarkMode }) => {
 
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {/* {infoList.map(({ icon, iconDark, title, description }, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.2 }}
-                className={`border rounded-lg p-6 cursor-pointer hover:shadow-lg transition-all duration-300 cursor-pointer hover:bg-none hover:-translate-y-1 hover:shadow-black
-                duration-500 hover:shadow-black dark:border-white
-                dark:hover:shadow-white dark:hover:bg-darkHover/50'${
-                  activeIndex === index ? 'max-h-[350px]' : 'max-h-[120px]'
-                }`}
-                onClick={() => toggleCard(index)}
-              >
-                <div className="flex items-center">
-                  <Image src={isDarkMode ? iconDark : icon} alt={title} className="mr-4 w-10 h-10" />
-                  <h3 className="text-xl font-semibold text-gray-700 dark:text-white">{title}</h3>
-                </div>
-                <div
-                  className={`overflow-hidden transition-all duration-300 ${
-                    activeIndex === index ? 'max-h-[300px] mt-4' : 'max-h-0'
-                  }`}
-                >
-                  <p className="text-base">
-                    {description.split('\n').map((line, i) => (
-                      <span key={i}>
-                        {line}
-                        <br />
-                      </span>
-                    ))}
-                  </p>
-                </div>
-              </motion.div>
-            ))} */}
+           
            {infoList.map(({ icon, iconDark, title, description }, index) => (
             <motion.div
                 key={index}
