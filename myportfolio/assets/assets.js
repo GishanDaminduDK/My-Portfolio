@@ -58,6 +58,7 @@ import deforestation from './deforestation.png';
 import micro_mouse from './micro-mouse.png';
 import webot_image from './webots.png';
 import dual_robot from './dualrobot.jpg';
+import ss from './ss.png';
 export const assets = {
    
     user_image,
@@ -118,6 +119,7 @@ export const assets = {
     micro_mouse,
     webot_image,
     dual_robot,
+    ss,
 
 
     

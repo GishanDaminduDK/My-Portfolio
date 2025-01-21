@@ -8,7 +8,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkTheme: '#1b1f24',  // Dark grayish-blue (rgb: 27, 31, 36)
+        darkTheme: '#020617',  // Dark grayish-blue (rgb: 27, 31, 36)
         lightHover: '#f0f8ff',  // Light blue hover effect (can be adjusted)
         darkHover: '#4c2c92',    // Deep purple hover effect
         mutedIndigo: '#6f667e',  // Muted grayish-blue
