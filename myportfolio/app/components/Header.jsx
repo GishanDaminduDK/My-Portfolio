@@ -114,7 +114,7 @@ const Header = () => {
         >
           As a self-motivated final-year undergraduate with a solid foundation of knowledge, I am passionate
           about tackling real-world problems and enthusiastic about making contributions to the fields of 
-          <strong> Software Engineering</strong>, <strong>Computer Vision</strong>, and <strong>Machine Learning</strong>.
+          <strong>&nbsp;Software Engineering</strong>, <strong>Computer Vision</strong>, and <strong>Machine Learning</strong>.
         </motion.p>
         
         <div className="flex flex-col sm:flex-row items-center gap-6 mt-8">
