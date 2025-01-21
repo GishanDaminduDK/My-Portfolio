@@ -42,7 +42,10 @@ jobs:
           npm run build
           # Create assets directory in out folder and copy assets
           mkdir -p out/assets
+          mkdir -p out/assets/public
+          cp -r assets/public out/assets/public
           cp -r assets/* out/assets/
+       
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
