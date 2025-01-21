@@ -4,6 +4,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { assets } from '@/assets/assets';
 import { Linkedin, Github, Facebook, Instagram } from 'lucide-react';
+//import cvPdf from '@/assets/CV_SE.pdf';
+
 import { motion } from "framer-motion";
 
 const SocialMediaBar = () => {
@@ -134,7 +136,7 @@ const Header = () => {
             initial={{y:30, opacity:0}}
             whileInView={{y:0, opacity:1}}
             transition={{duration: 0.6, delay:1.2}}
-            href="/sample-resume.pdf" 
+            href='CV_SE.pdf'
             download
             className="px-12 py-4 border rounded-full border-gray-500 flex items-center 
               gap-3 bg-white dark:text-black hover:bg-gray-100 transition-colors 
