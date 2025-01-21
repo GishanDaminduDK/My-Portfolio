@@ -58,8 +58,11 @@ const About = ({ isDarkMode }) => {
           className="flex-1"
         >
           <p className="mb-10 max-w-2xl font-Ovo">
-            I am currently a final-year undergraduate student in the Department of Electronic and Telecommunication Engineering at the University of Moratuwa, Sri Lanka. I have a strong academic foundation and a passion for
-            <strong> &nbsp; Software Engineering</strong>, <strong>Computer Vision</strong>, and <strong>Machine Learning</strong>. I am a quick learner, continuously seeking to expand my knowledge and skill set. As a team player, I am enthusiastic about collaborating with others to develop innovative applications. I am eager to explore and adapt to new technologies.
+            I am currently a final-year undergraduate student in the Department of Electronic and Telecommunication Engineering at the University of Moratuwa,
+             Sri Lanka. I have a strong academic foundation and a passion for
+            <strong> &nbsp; Software Engineering</strong>, <strong>Computer Vision</strong>, and <strong>Machine Learning</strong>. 
+            I am a quick learner, continuously seeking to expand my knowledge and skill set. As a team player, 
+            I am enthusiastic about collaborating with others to develop innovative applications. I am eager to explore and adapt to new technologies.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
