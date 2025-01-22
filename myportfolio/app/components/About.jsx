@@ -65,10 +65,10 @@ const About = ({ isDarkMode }) => {
         </p>
 
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
            
-           {infoList.map(({ icon, iconDark, title, description }, index) => (
-            <motion.div
+            {infoList.map(({ icon, iconDark, title, description }, index) => (
+              <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -93,38 +93,41 @@ const About = ({ isDarkMode }) => {
               </motion.div>
             ))}
 
-            {/* ✨ Popup Modal with Glassmorphism Effect ✨ */}
+            {/* ✨ Popup Modal with List Rendering ✨ */}
             {selectedInfo && (
-              <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.8 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.3 }}
-                  className="relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg 
-                            max-w-lg w-full border border-gray-200 dark:border-gray-700
-                            bg-opacity-80 dark:bg-opacity-90 backdrop-filter backdrop-blur-lg"
-                >
-                  <button
-                    className="absolute top-4 right-4 text-gray-600 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-all"
-                    onClick={() => setSelectedInfo(null)}
-                  >
-                    ✖
-                  </button>
-                  <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                    {selectedInfo.title}
-                  </h2>
-                  <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    {selectedInfo.description}
-                  </p>
-                  <button
-                    className="mt-6 px-5 py-2 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-all"
-                    onClick={() => setSelectedInfo(null)}
-                  >
-                    Close
-                  </button>
-                </motion.div>
-              </div>
-            )}
+  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm">
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.3 }}
+      className="relative bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg 
+                max-w-lg w-full border border-gray-200 dark:border-gray-700
+                bg-opacity-80 dark:bg-opacity-90 backdrop-filter backdrop-blur-lg"
+    >
+      <button
+        className="absolute top-4 right-4 text-gray-600 dark:text-gray-400 hover:text-red-500 dark:hover:text-red-400 transition-all"
+        onClick={() => setSelectedInfo(null)}
+      >
+        ✖
+      </button>
+      <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+        {selectedInfo.title}
+      </h2>
+      {/* ✅ Render HTML properly instead of showing raw HTML tags */}
+      <div className="text-gray-700 dark:text-gray-300 leading-relaxed" 
+           dangerouslySetInnerHTML={{ __html: selectedInfo.description }} 
+      />
+      <button
+        className="mt-6 px-5 py-2 bg-indigo-600 text-white font-medium rounded-lg hover:bg-indigo-700 transition-all"
+        onClick={() => setSelectedInfo(null)}
+      >
+        Close
+      </button>
+    </motion.div>
+  </div>
+)}
+
+
 
             <motion.h4
               initial={{ opacity: 0, y: 20 }}

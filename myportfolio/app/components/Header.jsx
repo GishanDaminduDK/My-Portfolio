@@ -194,7 +194,15 @@ import { Linkedin, Github, Facebook, Instagram } from "lucide-react";
 import { assets } from "@/assets/assets";
 
 // Titles to display
-const titles = ["I am a Software Engineer", "I am a Robotics Engineer", "I am a Physics Teacher"];
+const titles = [
+  "Software Engineering",
+  "Artificial Intelligence",
+  "Embedded Systems",
+  "Robotics",
+  "Computer Vision",
+  "Machine Learning"
+];
+
 
 const SocialMediaBar = () => {
   const socialLinks = [
@@ -264,13 +272,13 @@ const Header = ({ isDarkMode }) => {
 
   useEffect(() => {
     let typingTimeout;
-  
+
     // Function to handle typewriter effect
     const handleTyping = () => {
       const fullText = titles[currentTitleIndex];
       const isFullTextTyped = displayText === fullText;
       const isTextEmpty = displayText === "";
-  
+
       if (isFullTextTyped && !isDeleting) {
         setIsDeleting(true); // Start deleting after typing
         typingTimeout = setTimeout(handleTyping, 1500); // Pause before deleting
@@ -286,21 +294,21 @@ const Header = ({ isDarkMode }) => {
         typingTimeout = setTimeout(handleTyping, 200); // Slower typing speed
       }
     };
-  
+
     typingTimeout = setTimeout(handleTyping, 200); // Initial delay
-  
+
     return () => clearTimeout(typingTimeout); // Cleanup timeout on unmount
-  }, [currentTitleIndex, displayText, isDeleting]); // Dependency array
-  
+  }, [currentTitleIndex, displayText, isDeleting]);
 
   return (
     <>
+     
       <SocialMediaBar />
-      <div
-        className="w-11/12 max-w-4xl text-center mx-auto min-h-screen flex flex-col 
-          items-center justify-center gap-6 relative pb-20 md:pb-0"
-        style={{ paddingTop: "2cm" }}
-      >
+        <div
+          className="w-11/12 max-w-4xl text-center mx-auto min-h-screen flex flex-col 
+            items-center justify-center gap-6 relative pb-20 md:pb-0"
+          style={{ paddingTop: "2cm" }}
+        >
         <motion.div
           initial={{ scale: 0 }}
           whileInView={{ scale: 1 }}
@@ -317,7 +325,7 @@ const Header = ({ isDarkMode }) => {
           initial={{ y: -20, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.3 }}
-          className="flex items-end gap-2 text-2xl md:text-3xl mb-3 font-Ovo"
+          className="flex items-end gap-2 text-3xl md:text-3xl mb-3 font-Ovo"
         >
           Hi! I'm Gishan Damindu{" "}
           <Image src={assets.hand_icon} alt="profile_icon" className="w-8" />
@@ -328,9 +336,9 @@ const Header = ({ isDarkMode }) => {
             initial={{ y: -30, opacity: 0 }}
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="text-4xl sm:text-6xl lg:text-7xl font-Ovo leading-tight text-blue-400"
+            className="text-xl sm:text-2xl lg:text-4xl font-Ovo leading-tight text-blue-400"
           >
-            {displayText}
+            Interested in <span className="font-Ovo">{displayText}</span>
           </motion.h1>
         </div>
 
@@ -347,6 +355,33 @@ const Header = ({ isDarkMode }) => {
           <strong>Computer Vision</strong>, and{" "}
           <strong>Machine Learning</strong>.
         </motion.p>
+        <div className="flex flex-col sm:flex-row items-center gap-6 mt-8">
+           <motion.a 
+            initial={{y:30, opacity:0}}
+            whileInView={{y:0, opacity:1}}
+            transition={{duration: 0.6, delay:1}}
+            href="#contact"
+            className="px-12 py-4 border rounded-full border-gray-500 flex items-center 
+            gap-3 bg-white dark:text-white hover:bg-gray-100 transition-colors 
+            duration-300 text-lg  dark:bg-[#2563eb]"
+          >
+            Contact me<Image src={assets.right_arrow_white} alt="Arrow" className="w-5"/>
+          </motion.a>
+          
+          <motion.a 
+            initial={{y:30, opacity:0}}
+            whileInView={{y:0, opacity:1}}
+            transition={{duration: 0.6, delay:1.2}}
+            href='CV_SE.pdf'
+            download
+            className="px-12 py-4 border rounded-full border-gray-500 flex items-center 
+            gap-3 bg-white dark:text-white hover:bg-gray-100 transition-colors 
+            duration-300 text-lg  dark:bg-[#2563eb]"
+          >
+            My resume<Image src={isDarkMode? assets.ss:assets.download_icon} alt="download" className={isDarkMode ? "w-6" : "w-5"}/>
+          </motion.a>
+        </div>
+
       </div>
     </>
   );

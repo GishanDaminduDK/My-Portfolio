@@ -254,39 +254,72 @@ export const serviceData = [
 
 export const infoList = [
     {
-        icon: assets.edu_icon,
-        iconDark: assets.edu_icon_dark,
-        title: 'Education',
-        description: `•BSc in Electronic and Telecommunication Engineering, University of Moratuwa,
-        •Rahula College, Matara
-        `
-      }
-      
-   ,{ icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Tech Stack', description: 'Python, Java, JavaScript React Js, Go' },
-   {
-    icon: assets.project_icon,
-    iconDark: assets.project_icon_dark,
-    title: 'Certifications',
-    description: `• Object-Oriented Programming Specialization (University of London)
-    • Databases and SQL for Data Science with Python (IBM)
-    • Foundations of Data Structures and Algorithms Specialization (University of Colorado Boulder)
-    • Deep Learning Specialization (DeepLearning.AI)
-    • Machine Learning Specialization (Stanford University)
-    `
-  },
-  {
-    icon: assets.ui_icon,
-    iconDark: assets.abc_image_dark,
-    title: 'Achievements',
-    description: `• Champions | SPARK Challenge 22/23 - Electronic Engineering Undergraduate Competition
-  • 5th Place | Technobots 2023 - Robotics Competition hosted By SLTC University
-  • 4th Place | Sparklink1.0 2023 - Digital Design Competition hosted by University of Ruhuna
-  • Mahapola Higher Education (Merit) Scholarship`
-  }
-  
-  
-];
+      icon: assets.edu_icon,
+      iconDark: assets.edu_icon_dark,
+      title: 'Education',
+      description: [
+        `<div>
+          <ul class="text-gray-700 dark:text-gray-300 list-disc pl-5">
+            <li><strong>BSc in Electronic and Telecommunication Engineering</strong>, University of Moratuwa</li>
+            <li>Rahula College, Matara</li>
+          </ul>
+        </div>`
+      ]
+    },
+    {
+      icon: assets.code_icon,
+      iconDark: assets.code_icon_dark,
+      title: 'Work Experience',
+      description: [
+    `<div>
+      <strong class="text-lg">Software Engineer</strong> at 
+      <strong class="text-indigo-700">NCINGA PTE LTD</strong> <br />
+      <em class="text-gray-500">Dec 2023 - May 2024 | Colombo, Sri Lanka</em>
+      <ul class="mt-2 text-gray-700 dark:text-gray-300 list-disc pl-5">
+        <li>Developed a custom, bidirectional communication platform using 100% open-source tech stacks, including Spring Boot, Go, WebRTC, React.js, and Next.js.</li>
+        <li>Designed an intuitive UI/UX with Figma and MUI, enhancing responsiveness and user experience.</li>
+        <li>Built a scalable, microservices-based backend, reducing code complexity.</li>
+        <li>Implemented a secure deployment pipeline with Keycloak, MySQL, Docker, and AWS EC2 to minimize latency.</li>
+        <li>Developed a POC for a Cisco Meraki-based captive portal using the MERN stack, optimizing API call management.</li>
+      </ul>
+    </div>`
+],
 
+    },
+    {
+      icon: assets.project_icon,
+      iconDark: assets.project_icon_dark,
+      title: 'Certifications',
+      description: [
+        `<div>
+          <ul class="text-gray-700 dark:text-gray-300 list-disc pl-5">
+            <li><strong>Object-Oriented Programming Specialization</strong> (University of London)</li>
+            <li><strong>Databases and SQL for Data Science with Python</strong> (IBM)</li>
+            <li><strong>Foundations of Data Structures and Algorithms Specialization</strong> (University of Colorado Boulder)</li>
+            <li><strong>Deep Learning Specialization</strong> (DeepLearning.AI)</li>
+            <li><strong>Machine Learning Specialization</strong> (Stanford University)</li>
+          </ul>
+        </div>`
+      ]
+    },
+    {
+      icon: assets.ui_icon,
+      iconDark: assets.abc_image_dark,
+      title: 'Achievements',
+      description: [
+        `<div>
+          <ul class="text-gray-700 dark:text-gray-300 list-disc pl-5">
+            <li><strong>Champions</strong> | SPARK Challenge 22/23 - Electronic Engineering Undergraduate Competition</li>
+            <li><strong>5th Place</strong> | Technobots 2023 - Robotics Competition hosted by SLTC University</li>
+            <li><strong>4th Place</strong> | Sparklink1.0 2023 - Digital Design Competition hosted by University of Ruhuna</li>
+            <li><strong>Mahapola Higher Education (Merit) Scholarship</strong> awarded for achieving an island rank of 50 in the GCE A/L Examination.</li>
+          </ul>
+        </div>`
+      ]
+    }
+  ];
+
+  
 export const toolsData = [
     assets.firebase, assets.vscode, assets.java, assets.mongodb, assets.git, assets.figma
 ];
