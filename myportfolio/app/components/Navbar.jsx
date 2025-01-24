@@ -20,7 +20,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       setIsScroll(window.scrollY > 50);
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);// start this 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
