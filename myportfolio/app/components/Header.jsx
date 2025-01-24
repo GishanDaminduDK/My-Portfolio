@@ -181,7 +181,7 @@ const Header = ({ isDarkMode }) => {
             initial={{y:30, opacity:0}}
             whileInView={{y:0, opacity:1}}
             transition={{duration: 0.6, delay:1.2}}
-            href='CV_SE.pdf'
+            href='CV.pdf'
             download
             className="px-12 py-4 border rounded-full border-gray-500 flex items-center 
             gap-3 bg-white dark:text-white hover:bg-gray-100 transition-colors 
