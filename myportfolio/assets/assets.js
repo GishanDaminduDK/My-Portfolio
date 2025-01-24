@@ -146,15 +146,15 @@ export const workData = [
         githublink:'https://github.com/GishanDaminduDK/Unity-Game-Development',
         techStacks:'React.js,Spring Boot,Unity,MySQL',
     },
-    {
-        category: 'Web Development',
-        title: 'Video Chat Application',
-        description: `A secure, bidirectional video chat application built with WebRTC, React, and Go.
-        This application is designed for real-world insurance use cases with a focus on secure client communications.`,
-        bgImage: assets.video,
-        githublink:'https://github.com/GishanDaminduDK/VideoChatApp',
-        techStacks:'WebRTC, React.js, Go, MySQL',
-    },
+    // {
+    //     category: 'Web Development',
+    //     title: 'Video Chat Application',
+    //     description: `A secure, bidirectional video chat application built with WebRTC, React, and Go.
+    //     This application is designed for real-world insurance use cases with a focus on secure client communications.`,
+    //     bgImage: assets.video,
+    //     githublink:'https://github.com/GishanDaminduDK/VideoChatApp',
+    //     techStacks:'WebRTC, React.js, Go, MySQL',
+    // },
     {
         category: 'Software Development',
         title: 'LLM RAG Chatbot',
