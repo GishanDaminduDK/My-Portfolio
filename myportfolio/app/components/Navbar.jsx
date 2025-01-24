@@ -5,7 +5,7 @@ import { assets } from '@/assets/assets';
 const Navbar = ({ isDarkMode, setIsDarkMode }) => {
   const [isScroll, setIsScroll] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);  // Added state for menu toggle
-  const sideMenuRef = useRef();
+  const sideMenuRef = useRef();  //Use ref hook use 
 
   const openMenu = () => {
     setIsMenuOpen(true);
