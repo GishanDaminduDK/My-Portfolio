@@ -46,10 +46,10 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
             : "bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent"
         }`}>
           <li><a className="font-Ovo" href="#top">Home</a></li>
-          <li><a className="font-Ovo" href="#about">About me</a></li>
+          <li><a className="font-Ovo" href="#about">About Me</a></li>
           {/* <li><a className="font-Ovo" href="#services">Services</a></li> */}
           <li><a className="font-Ovo" href="#work">My Work</a></li>
-          <li><a className="font-Ovo" href="#contact">Contact me</a></li>
+          <li><a className="font-Ovo" href="#contact">Contact Me</a></li>
         </ul>
 
         {/* Dark Mode Toggle and Contact Button */}
