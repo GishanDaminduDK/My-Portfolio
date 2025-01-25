@@ -276,11 +276,11 @@ export const infoList = [
                 <strong class="text-indigo-700">NCINGA PTE LTD</strong> <br />
                 <em class="text-gray-500">Dec 2023 - May 2024 | Colombo, Sri Lanka</em>
                 <ul class="mt-2 text-gray-700 dark:text-gray-300 list-disc pl-5">
-                    <li>Developed a custom, bidirectional communication platform using 100% open-source tech stacks, including Spring Boot, Go, WebRTC, React.js, and Next.js.</li>
-                    <li>Designed an intuitive UI/UX with Figma and MUI, enhancing responsiveness and user experience.</li>
-                    <li>Built a scalable, microservices-based backend, reducing code complexity.</li>
-                    <li>Implemented a secure deployment pipeline with Keycloak, MySQL, Docker, and AWS EC2 to minimize latency.</li>
-                    <li>Developed a proof of concept (POC) for a Cisco Meraki-based captive portal using the MERN stack, optimizing API call management.</li>
+                    <li>Developed a bidirectional communication platform using Spring Boot,
+                     Go, WebRTC, React.js, and Next.js, with responsive UI/UX designed in Figma and MUI</li>
+                    <li>Implemented microservices-based backend architecture</li>
+                    <li>Set up secure deployment pipeline with Nginx, MySQL, Docker, and AWS EC2</li>
+                    <li>Created POC for Cisco Meraki-based captive portal using MERN stack</li>
                 </ul>
             </div>`
         ]
