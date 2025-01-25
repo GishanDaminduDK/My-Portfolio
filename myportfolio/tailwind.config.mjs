@@ -1,4 +1,3 @@
-
 export default {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,10 +7,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        darkTheme: '#020617',  // Dark grayish-blue (rgb: 27, 31, 36)
-        lightHover: '#f0f8ff',  // Light blue hover effect (can be adjusted)
-        darkHover: '#4c2c92',    // Deep purple hover effect
-        mutedIndigo: '#6f667e',  // Muted grayish-blue
+        darkTheme: '#020617',
+        lightHover: '#f0f8ff',
+        darkHover: '#4c2c92',
+        mutedIndigo: '#6f667e',
       },
       fontFamily: {
         Outfit: ['Outfit', 'sans-serif'],
@@ -25,11 +24,24 @@ export default {
         'auto': 'repeat(auto-fit, minmax(200px, 1fr))',
       },
       backgroundImage: {
-        // Complementary gradient based on the dark color
         'custom-gradient': 'linear-gradient(135deg, rgba(27,31,36,0.8), rgba(45,40,58,0.9), rgba(28,36,51,1))',
       },
     },
   },
-  darkMode: 'class', // Use 'class' for toggling dark mode
-  plugins: [],
+  darkMode: 'class',
+  plugins: [
+    function({ addBase }) {
+      addBase({
+        '.custom-star-list': {
+          'list-style-type': 'none',
+          'padding-left': '20px'
+        },
+        '.custom-star-list li::before': {
+          'content': '"★ "',
+          'color': '#6366f1',
+          'margin-right': '10px'
+        }
+      })
+    }
+  ]
 };

@@ -261,7 +261,9 @@ export const infoList = [
             `<div>
                 <ul class="text-gray-700 dark:text-gray-300 list-disc pl-5">
                     <li><strong>BSc in Electronic and Telecommunication Engineering</strong>, University of Moratuwa</li>
-                    <li>Rahula College, Matara</li>
+                    <li><strong>Rahula College, Matara</strong></li>
+                    <li>GCE Advanced Level — Physical Science Stream</li>
+                    <li>3As — Island Rank: 50 — District Rank: 5</li>
                 </ul>
             </div>`
         ]
@@ -275,12 +277,11 @@ export const infoList = [
                 <strong class="text-lg">Software Engineer</strong> at 
                 <strong class="text-indigo-700">NCINGA PTE LTD</strong> <br />
                 <em class="text-gray-500">Dec 2023 - May 2024 | Colombo, Sri Lanka</em>
-                <ul class="mt-2 text-gray-700 dark:text-gray-300 list-disc pl-5">
-                    <li>Developed a bidirectional communication platform using Spring Boot,
-                     Go, WebRTC, React.js, and Next.js, with responsive UI/UX designed in Figma and MUI</li>
-                    <li>Implemented microservices-based backend architecture</li>
-                    <li>Set up secure deployment pipeline with Nginx, MySQL, Docker, and AWS EC2</li>
-                    <li>Created POC for Cisco Meraki-based captive portal using MERN stack</li>
+                <ul class="mt-2 text-gray-700 dark:text-gray-300 custom-star-list">
+                    <li>Developed a bidirectional communication platform using Spring Boot, Go, WebRTC, React.js, and Next.js, with a
+                     responsive UI/UX designed using Figma and MUI. Implemented a microservices-based backend architecture to reduce complexity.</li>
+                    <li>Set up this secure deployment pipeline with Nginx, MySQL, Docker, and AWS EC2.</li>
+                    <li>Created POC for Cisco Meraki-based captive portal using MERN stack.</li>
                 </ul>
             </div>`
         ]
@@ -308,6 +309,7 @@ export const infoList = [
         description: [
             `<div>
                 <ul class="text-gray-700 dark:text-gray-300 list-disc pl-5">
+                    <li><strong>Dean’s List</strong> | Semester 6 and Semester 7</li>
                     <li><strong>Champions</strong> | SPARK Challenge 22/23 - Electronic Engineering Undergraduate Competition</li>
                     <li><strong>5th Place</strong> | Technobots 2023 - Robotics Competition hosted by SLTC University</li>
                     <li><strong>4th Place</strong> | Sparklink1.0 2023 - Digital Design Competition hosted by University of Ruhuna</li>
